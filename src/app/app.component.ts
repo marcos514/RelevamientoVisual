@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AuthService } from "./service/auth.service";
 import { timer } from 'rxjs';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,7 +22,8 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private AFauth: AuthService
+    private AFauth: AuthService,
+    private publicRouter:Router
   ) {
     this.initializeApp();
   }
@@ -37,5 +39,8 @@ export class AppComponent {
 
   LogOut(){
     this.AFauth.logOut();
+  }
+  home(){
+    this.publicRouter.navigate(['/home'])
   }
 }

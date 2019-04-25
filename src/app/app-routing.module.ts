@@ -20,8 +20,13 @@ const routes: Routes = [
   },
   {
     path: 'log-in',
-    loadChildren: './log-in/log-in.module#LogInPageModule'
-  }
+    loadChildren: './log-in/log-in.module#LogInPageModule',
+    canActivate: [NoLogInGuard]
+
+  },
+  { path: 'linda', loadChildren: './page/cosas-lindas/cosas-lindas.module#CosasLindasPageModule',canActivate: [AuthGuard] },
+  { path: 'fea', loadChildren: './page/cosas-feas/cosas-feas.module#CosasFeasPageModule',canActivate: [AuthGuard] },
+  { path: 'fotos', loadChildren: './page/fotos/fotos.module#FotosPageModule',canActivate: [AuthGuard] }
 ];
 
 @NgModule({

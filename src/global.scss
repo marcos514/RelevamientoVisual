@@ -10,6 +10,15 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 
+
+.fondo{
+    height: 100%; 
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .base {
     /* The image used */
     background-image: url("./assets/splashScreen/base.jpeg");
@@ -48,6 +57,31 @@
     }
 }
 
+.edificio {
+    /* The image used */
+    background-image: url("./assets/splashScreen/edificio.png");
+  
+    /* Full height */
+    height: 100%; 
+
+    animation-name: nospin;
+    animation-duration:2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@keyframes nospin {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}
 
 
 

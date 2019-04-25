@@ -1,19 +1,22 @@
-  <div *ngIf='showSplash' class="base">
+<div *ngIf='showSplash' class="fondo">
+  <div class="base">
     <div class="center">
+      <div class="edificio"></div>
     </div>
   </div>
-    <ion-header style="background-color:cyan">
-      <ion-toolbar color="primary">
-        <ion-title text-center>
-          {{titulo}}
-          <ion-button style="position: relative; right: 0;" (click)='LogOut()'>
-            <ion-icon slot="icon-only" name="star"></ion-icon>
-          </ion-button>
-        </ion-title>
-      </ion-toolbar>
-    </ion-header>
+</div>
+<ion-toolbar color='primary'>
+  <ion-button slot="start" fill="clear" color="light" (click)='home()'>
+    <ion-icon name="home"></ion-icon>
+  </ion-button>
+  <ion-title text-center>
+    {{titulo}}
+  </ion-title>
+  <ion-button slot="end" fill="clear" color="danger" (click)='LogOut()'>
+    <ion-icon name="log-out"></ion-icon>
+  </ion-button>
+</ion-toolbar>
 
-    <ion-content>
-      <ion-router-outlet></ion-router-outlet>
-    </ion-content>
-
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

@@ -1,0 +1,32 @@
+<div class="cosa">
+    <h1 class="text">
+        Cosas Feas
+    </h1>
+</div>
+
+<ion-slides class="slides">
+  <!-- Foto -->
+
+
+  <ion-slide class="slides" *ngFor="let dato of arrayCosasLindas">
+    <div class="usuarios">
+      <h1 class="text">
+        {{dato.usuario}}
+      </h1>
+      <!-- <div class="flex-h actions-container">
+    
+        <div class="width-50 end-horizontal">
+          <div class="flex-h"></div>
+          <div class="count-detail">{{dato.votos}}</div>
+          <div class="flex-v icon-container mi-fab" (click)="Like(dato)">
+            <img class="mi-fab-icon" src="assets/imgs/like.png">
+          </div>
+        </div>
+      </div> -->
+    </div>
+    <div class="imagen">
+      <img class="picture" src='{{dato.link}}' />
+    </div>
+    
+  </ion-slide>
+</ion-slides>
