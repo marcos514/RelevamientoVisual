@@ -9,7 +9,7 @@ import { FotosService } from 'src/app/services/foto.service';
 export class CosasFeasPage implements OnInit {
   constructor(private subir:FotosService) { }
   arrayCosasLindas=[];
-
+  mensaje;
   ngOnInit() {
     this.ObtenerLindasDeBase();
   }
@@ -26,7 +26,9 @@ export class CosasFeasPage implements OnInit {
     
   }
 
-
+  mandarMensaje(){
+    this.subir.UploadToFirestore("A",this.mensaje)
+  }
   private OrderByDate() {
     this.arrayCosasLindas= this.arrayCosasLindas.sort((a, b) => {
       return b.fecha.localeCompare(a.fecha);
