@@ -39,3 +39,26 @@
     height: 10%;
     background-color: rgb(197, 63, 108);
 }
+
+
+
+.derecha{
+    float: right;
+}
+.izq{
+    float: left;
+}
+
+.back{
+    position: relative;
+    width: 100%;
+    background-color: rgba(208, 0, 255, 0.585);
+    height: 100%;
+}
+
+.foot{
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 1px;
+}

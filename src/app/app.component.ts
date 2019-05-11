@@ -39,6 +39,7 @@ export class AppComponent {
 
   LogOut(){
     this.AFauth.logOut();
+    this.publicRouter.navigate(['/log-in'])
   }
   home(){
     this.publicRouter.navigate(['/home'])

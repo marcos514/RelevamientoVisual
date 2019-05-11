@@ -33,7 +33,7 @@
 
 .center {
     /* The image used */
-    background-image: url("./assets/splashScreen/chat.png");
+    background-image: url("./assets/splashScreen/estrella.png");
   
     /* Full height */
     height: 100%; 
@@ -59,7 +59,7 @@
 
 .edificio {
     /* The image used */
-    background-image: url("./assets/splashScreen/edificio.png");
+    background-image: url("./assets/splashScreen/chat.png");
   
     /* Full height */
     height: 100%; 
@@ -79,7 +79,7 @@
         transform:rotate(360deg);
     }
     to {
-        transform:rotate(0deg);
+        transform:rotate(-360deg);
     }
 }
 

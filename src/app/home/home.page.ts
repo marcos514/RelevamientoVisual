@@ -11,9 +11,7 @@ export class HomePage {
     
    }
   aux;
-  ngOnInit() {
-
-    
+  ngOnInit() { 
   }
   mover(lugar){
     this.publicRouter.navigate([lugar]);
